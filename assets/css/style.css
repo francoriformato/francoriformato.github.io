@@ -445,13 +445,13 @@ section {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
-.projects .iconbox-blue i {
-  color: #47aeff;
+.projects .iconbox-grey i {
+  color: #303030;
 }
-.projects .iconbox-blue:hover .icon i {
+.projects .iconbox-grey:hover .icon i {
   color: #fff;
 }
-.projects .iconbox-blue:hover .icon path {
+.projects .iconbox-grey:hover .icon path {
   fill: #47aeff;
 }
 .projects .iconbox-orange i {
