@@ -304,39 +304,6 @@ section {
 }
 
 
-
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
-}
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #ffc107;
-}
-
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -400,7 +367,6 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 .projects .icon-box .icon {
@@ -427,13 +393,14 @@ section {
   transition: 0.5s;
   fill: #f5f5f5;
 }
+
 .projects .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 .projects .icon-box h4 a {
-  color: #45505b;
+  color: #dcdcdc;
   transition: ease-in-out 0.3s;
 }
 .projects .icon-box p {
@@ -445,6 +412,8 @@ section {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
+
+
 .projects .iconbox-grey i {
   color: #303030;
 }
@@ -452,8 +421,13 @@ section {
   color: #fff;
 }
 .projects .iconbox-grey:hover .icon path {
-  fill: #47aeff;
+  fill: #2d3a44;
 }
+.projects .iconbox-grey:hover a {
+  color:#2d3a44;
+}
+
+
 .projects .iconbox-orange i {
   color: #ffa76e;
 }
@@ -463,15 +437,11 @@ section {
 .projects .iconbox-orange:hover .icon path {
   fill: #ffa76e;
 }
-.projects .iconbox-pink i {
-  color: #e80368;
+.projects .iconbox-orange:hover a {
+  color:#ffa76e;
 }
-.projects .iconbox-pink:hover .icon i {
-  color: #fff;
-}
-.projects .iconbox-pink:hover .icon path {
-  fill: #e80368;
-}
+
+
 .projects .iconbox-yellow i {
   color: #ffbb2c;
 }
@@ -481,15 +451,23 @@ section {
 .projects .iconbox-yellow:hover .icon path {
   fill: #ffbb2c;
 }
+.projects .iconbox-yellow:hover a {
+  color:#ffbb2c;
+}
+
 .projects .iconbox-red i {
   color: #ff5828;
 }
 .projects .iconbox-red:hover .icon i {
   color: #fff;
 }
+.projects .iconbox-red:hover a {
+  color:#ff5828;
+}
 .projects .iconbox-red:hover .icon path {
   fill: #ff5828;
 }
+
 .projects .iconbox-teal i {
   color: #11dbcf;
 }
@@ -498,6 +476,9 @@ section {
 }
 .projects .iconbox-teal:hover .icon path {
   fill: #11dbcf;
+}
+.projects .iconbox-teal:hover a {
+  color:#11dbcf;;
 }
 
 /*--------------------------------------------------------------
@@ -677,3 +658,44 @@ section {
 }
 
 
+/* Project Cards */
+#masonry-effect {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-direction: column;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  position: relative;
+  width: auto;
+  background: linear-gradient(45deg, #281dd4, #f6059a);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  font-variation-settings: 'wght' 600;
+}
+@media (min-width: 992px) {
+  .item {
+    width: calc(33.3% - 1.5rem);
+  }
+}
+.item:nth-of-type(1) {
+  background: linear-gradient(45deg, #1d5ed4, #2bbbff);
+}
+.item:nth-of-type(2) {
+  background: linear-gradient(45deg, #86A8E7, #91EAE4);
+}
+.item:nth-of-type(3) {
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+}
+.item:nth-of-type(4) {
+  background: linear-gradient(45deg, #7303c0, #fdeff9);
+}
+.item:nth-of-type(5) {
+  background: linear-gradient(45deg, #d4581d, #ffbe2b);
+}
